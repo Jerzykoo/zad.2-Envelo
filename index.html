@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1 class="title">ENVELO</h1>
+            <h3 class="subtitle">Możesz mieć swoją przesyłkę w kilkanaście sekund.<br>Rozpocznij klikając w przycisk.
+            </h3>
+
+                <div class="form" >
+                    <div class="phoneWrapper">
+                        <p>Numer telefonu</p>
+                        <input class="phone" type="text" onkeyup="check(this.value,'phone')">
+                        <p class="error phone1">Numer telefonu musi skladac się <br> z dokladnie 9 cyfr</p>
+                        <p class="error phone2">To pole jest wymagane</p>
+                        <p class="error phone3">Nie można używać liter</p>
+                    </div>
+        
+                    <div class="codeWrapper">
+                        <p>Kod odbioru</p>
+                        <input class="code" type="text" onkeyup="check(this.value,'code')">
+                        <p class="error code1">Kod musi skladac się <br> z dokladnie 4 cyfr</p>
+                        <p class="error code2">To pole jest wymagane</p>
+                        <p class="error code3">Nie można używać liter</p>
+                    </div>
+                    
+                </div>
+    
+                <div class="button">
+                    <button class="main start">Odbierz paczkę</button>
+                </div>
+
+
+                
+               
+
+            </div>
+            <div class="summary">
+                <h1>Paczka odebrana!</h1>
+                <h3>Zrobiłeś to w czasie <span id="time"></span> sekund! Czy możemy zrobić dla ciebie coś jeszcze?</h3>
+
+                <div class="buttons">
+                    <div class="button">
+                        <button class="goTo0">To wszystko na <br> dziś</button>
+                    </div>
+                    <div class="button">
+                        <button class="goTo1">Odbierz kolejną <br> paczkę</button>
+                    </div>
+                </div>
+            
+            </div> 
+          
+    </div>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
